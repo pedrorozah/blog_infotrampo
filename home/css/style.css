@@ -1,11 +1,12 @@
 /* DEFINIÇÕES GERAIS */
+
 body, h1, h2, p, ul, li, a{
     margin: 0px;
     padding: 0px;
 }
 
 body{
-    font-family: 'Poppins', sans-serif ;
+    font-family: 'Poppins Semi Bold', sans-serif ;
     color: #222222;
 }
 
@@ -16,7 +17,6 @@ ul {
 a{
     text-decoration: none;
 }
-
 
 *{
     box-sizing: border-box;
@@ -30,7 +30,7 @@ a{
 
 .nav-espaco{
     flex: 1;
-    border: 1px solid blue;
+    
 }
 
 .nav-menu{
@@ -44,6 +44,8 @@ a{
     width: 960px;
 }
 
+/* LOGO */
+
 .nav-logo{
     display: flex;
     font-size: 2em;
@@ -51,7 +53,7 @@ a{
     align-content: center;
     justify-content: center;
     flex: 1;   
-    border: 1px solid red;
+    
 }
 
 .nav-logo i{
@@ -59,8 +61,10 @@ a{
     padding-right: 10px;
 }
 
+/* ACESSO */
+
 .nav-acesso{
-    border: 1px solid black;
+    
     align-content: center;
     display: flex;
     flex-wrap: wrap;
@@ -104,4 +108,7 @@ a{
 
 .intro-text{
     margin: 0 ;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
 }
