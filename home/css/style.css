@@ -5,7 +5,7 @@ body, h1, h2, p, ul, li, a{
 }
 
 body{
-    font-family: 'Poppins Semi Bold', sans-serif ;
+    font-family: 'Poppins', sans-serif ;
     color: #222222;
 }
 
@@ -24,31 +24,48 @@ a{
 
 /* NAVBAR */
 
-header{
+.nav-bg{
     background: #FFD503;
+}
+
+.nav-espaco{
+    flex: 1;
+    border: 1px solid blue;
 }
 
 .nav-menu{
     display: flex;
-    max-width: 960px;
     margin: 0 auto;
-    padding: 15px 0px;
+    padding: 20px 0;
     flex-wrap: wrap;
-    justify-content: space-between; 
-    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    width: 960px;
 }
 
 .nav-logo{
     display: flex;
-    flex-wrap: wrap;
     font-size: 2em;
     font-weight: bold;
-    margin: 0 10px;
+    align-content: center;
+    justify-content: center;
+    flex: 1;   
+    border: 1px solid red;
 }
 
 .nav-logo i{
     align-self: center;
     padding-right: 10px;
+}
+
+.nav-acesso{
+    border: 1px solid black;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    flex: 1;
 }
 
 .nav-acesso ul{
@@ -57,8 +74,6 @@ header{
 }
 
 .nav-acesso a{
-    
-    display: block;
     padding: 10px;
     font-size: 1em;
     color: black;
