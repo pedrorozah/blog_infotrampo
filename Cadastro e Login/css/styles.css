@@ -1,0 +1,150 @@
+/* DEFINIÇÕES GERAIS */
+
+body, h1, h2, h3, p, ul, li, a{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Poppins Semi Bold', sans-serif ;
+    color: #222222;
+}
+
+ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/* NAVBAR */
+
+header{
+    background: #ffc403;
+}
+
+.nav-menu{
+    display: flex;
+    margin: 0 auto;
+    padding: 20px 0;
+    width: 100%;
+}
+
+/* LOGO */
+
+.nav-logo{
+    display: flex;
+    font-size: 2em;
+    font-weight: bold;
+    flex: 2;
+    margin-right: 30px;
+    justify-content: center;
+}
+
+.nav-logo i{
+    align-self: center;
+    padding-right: 10px;
+}
+.nav-logo p{
+    margin-top: 5px;
+    margin-left: 3px;
+}
+
+/* ACESSO */
+
+.nav-acesso{
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex: 1;
+}
+
+.nav-acesso ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-acesso a{
+    padding: 10px;
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.nav-acesso a:hover{
+    background: black;
+    color: white;
+    transition: 0.5s;
+}
+
+/* INTRO */
+
+.background{
+    margin-top: 30px;
+    max-width: 100%;
+    height: 1000px;
+    display: flex;
+}
+
+.intro-bg{
+    background: white;
+    width: 100%;
+    height: 400px;
+}
+
+.intro-text{
+    margin: 0 ;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: black;
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h2{
+    font-size: 20px;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.footer-bottom{
+    background-color: #2e2e2e;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
