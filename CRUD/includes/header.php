@@ -15,4 +15,12 @@
         <div class="jumbotron">
             <h1>INFOTRANPO</h1>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <section>
+        <a href="cadastrar.php">
+            <button class="btn btn-success">Cadastrar</button>
+        </a>
+        <a href="logar.php">
+            <button class="btn btn-primary">Login</button>
+        </a>
+    </section>
         </div>

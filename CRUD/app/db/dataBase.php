@@ -28,4 +28,63 @@ class dataBase{
             }
         }
 
+        public function execute ($query,$params=[]) {
+            try {
+                $statemente = $this->connection->prepare($query);
+                $statemente->execute($params);
+                return $statemente;
+            } catch (PDOException $e) {
+                 die('ERROR: '.$e->getMessage());
+             }
+
+        }
+
+        public function insert($values){
+            $fields = array_keys($values);
+            $binds = array_pad([],count($fields),'?');
+
+            $query = 'INSERT INTO '.$this->table.' ('.implode(',',$fields).' ) VALUES ('.implode(',',$binds).')';
+            $this->execute($query,array_values($values));
+            return $this->connection->lastInsertId();
+        }
+
+        public function select($where = null, $order = null, $limit=null, $fields = '*'){
+            $where = strlen($where) ? 'WHERE'.$where : '';
+            $order = strlen($order) ? 'ORDER BY'.$order : '';
+            $limit = strlen($limit) ? 'LIMIT'.$limit : '';
+            
+            $query = 'SELECT '.$fields.' FROM tb_users '.$where.' '.$order.' '.$limit;
+            return $this->execute($query);
+        }
+
+        public function selectOne($id){
+
+            $query = 'SELECT * FROM tb_users WHERE '.$id;
+            return $this->execute($query);
+
+            
+        }
+
+        public function selectLogin($email,$senha){
+                    //SELECT * FROM tb_users WHERE email = "como" and senha = "consagrado"
+            $query = 'SELECT * FROM tb_users WHERE email = "'.$email.'" AND senha = "'.$senha.'"';
+            //print_r($query);
+            return $this->execute($query);
+
+            
+        }
+
+        public function update($where,$values){
+            $fields = array_keys($values);
+            $query = 'UPDATE tb_users SET '.implode('=?,',$fields).'=? WHERE id = '.$where;
+            $this->execute($query,array_values($values));
+            return true;
+        }
+
+        public function delete($where){
+            $query = 'DELETE FROM tb_users WHERE id = '.$where;
+            $this->execute($query);
+            return true;
+        }
+
     }
