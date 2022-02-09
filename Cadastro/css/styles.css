@@ -57,7 +57,6 @@ body{
     justify-content: center;
     width: 100%;
     margin-top: 100px;
-
 }
 
 .card{
@@ -84,7 +83,7 @@ h1{
     outline: none;
     min-width: 180px;
     font-size: 16px;
-    transition: all.3 ease-out;
+    transition: all .3 ease-out;
     border-radius: 0;
 }
 
@@ -100,6 +99,7 @@ h1{
 }
 
 .label-float label{
+    /* / */
     pointer-events: none;
     color: #222222;
     position: absolute;
@@ -107,6 +107,19 @@ h1{
     left: 0;
     margin-top: 13px;
     transition: all .3s ease-out;
+}
+
+.label-float textarea{
+    width: 100%;
+    margin-top: 15px;
+    height: 100px;
+    font-family: 'Poppins Semi Bold', sans-serif ;
+    font-size: 18px;
+}
+
+.data_nascimento{
+    
+    transition: all 2.3s ease-out;
 }
 
 .label-float input:focus + label,
@@ -172,15 +185,14 @@ button:hover{
 
 /* FOOTER */
 
-/* FOOTER */
-
 footer{
     background-color: rgb(19, 18, 18);
     height: auto;
     width: 100%;
     padding-top: 40px;
     color: #fff;
-    margin-top: 200px;
+    position: absolute;
+    bottom: 0;
 }
 
 .footer-content{
