@@ -1,7 +1,9 @@
 <?php
     require __DIR__.'/vendor/autoload.php';
     use \App\Entity\usuario;
+    use \App\Sessao\loginSessao;
     define('TITLE','Login');
+    loginSessao::requireLogOut();
     /*
     if (!isset($_GET['email']) or !isset($_GET['senha'])) {
         header('location: index.php?status=error3');
