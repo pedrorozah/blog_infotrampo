@@ -1,0 +1,186 @@
+/* DEFINIÇÕES GERAIS */
+
+body, h1, h2, h3, p, ul, li, a{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Poppins Semi Bold', sans-serif ;
+}
+
+ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* LOGO */
+
+.nav-logo{
+    font-size: 2em;
+    font-weight: bold;
+    margin-right: 30px;
+    display: flex;
+    padding: 10px;
+}
+
+.nav-logo i{
+    align-self: center;
+    padding-right: 10px;
+}
+.nav-logo p{
+    margin-top: 5px;
+    margin-left: 3px;
+}
+
+.nav-logo a{
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* CADASTRO */
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.card{
+    background-color: #dad6d6;
+    padding: 30px;
+    border-radius: 4%;
+    box-shadow: 3px 3px 1px 0px #00000070;
+    width: 400px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #222222;
+}
+
+.label-float input{
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid #222222;
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3 ease-out;
+    border-radius: 0;
+}
+
+.label-float{
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.label-float input:focus{
+    border-bottom: 2px solid #2e2e2e;
+}
+
+.label-float label{
+    /* / */
+    pointer-events: none;
+    color: #222222;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+}
+
+.label-float textarea{
+    width: 100%;
+    margin-top: 15px;
+    height: 100px;
+    font-family: 'Poppins Semi Bold', sans-serif ;
+    font-size: 18px;
+}
+
+.data_nascimento{
+    
+    transition: all 2.3s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label{
+    font-size: 13px;
+    margin-top: 0;
+    color: #2e2e2e;
+}
+
+button{
+    background-color: transparent;
+    border-color: #222222;
+    color: black;
+    padding: 7px;
+    font-weight: bold;
+    font-size: 12pt;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover{
+    background-color: black;
+    color: #ffffff;
+}
+
+.justify-center{
+    display: flex;
+    justify-content: center;
+}
+
+.justify-center hr{
+    border-color: #222222;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 60%;
+}
+
+.login-paragrafo p{
+    color: #222222;
+    font-size: 14pt;
+    text-align: center;
+}
+
+.login-paragrafo a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .3 ease-out;
+}
+
+.login-paragrafo a:hover{
+    color: orangered;
+}
+
+.fa-eye{
+    position: absolute;
+    top: 17px;
+    right: 10px;
+    cursor: pointer;
+}

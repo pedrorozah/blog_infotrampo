@@ -1,0 +1,272 @@
+/* DEFINIÇÕES GERAIS */
+
+body, h1, h2, h3, p, ul, li, a{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Poppins Semi Bold', sans-serif ;
+    color: #222222;
+}
+
+ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/* NAVBAR */
+
+header{
+    background: #ffc403;
+    padding: 20px 0;
+    width: 100%;
+    display: flex;
+}
+
+/* LOGO */
+
+.nav-logo{
+    display: flex;
+    font-size: 2em;
+    font-weight: bold;
+    flex: 4;
+    margin-right: 30px;
+    justify-content: center;
+}
+
+.nav-logo i{
+    align-self: center;
+    padding-right: 10px;
+}
+.nav-logo p{
+    margin-top: 5px;
+    margin-left: 3px;
+}
+
+.nav-logo a{
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* ACESSO */
+
+.nav-acesso{
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex: 3;
+}
+
+.nav-acesso ul{
+    display: flex;
+}
+
+.nav-acesso li{
+    margin-left: 20px;
+}
+
+.nav-acesso a{
+    padding: 10px;
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.nav-acesso a:hover{
+    background: black;
+    color: white;
+    transition: 0.5s;
+}
+
+/* TELA */
+
+.box{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    width: 90%;
+    height: auto;
+    border-style: solid;
+    margin: 3px;
+    flex-wrap: wrap;
+}
+
+.tela{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    
+}
+
+.tela h2{
+    margin-left: 80px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* FILTRO */
+
+.box-filtro{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.filtro{
+    width: 300px;
+    height: auto;
+    border-style: solid;
+    margin: -2px;
+}
+
+
+.lista{
+    margin-top: 20px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lista ul p{
+    font-weight: bold;
+    margin-left: 10px;
+    margin: 10px;
+}
+
+.lista p{
+    text-align: center;
+}
+
+.lista label:hover{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+button{
+    background-color: white;
+    margin-top: 15px;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+}
+    
+button:hover{
+    background: black;
+    color: white;
+    transition: 0.5s;
+}
+
+/* PESQUISA */
+
+#txtBusca{
+    padding-left: 5px;
+    font-style: italic;
+    font-size: 20px;
+    width: 1347px;
+    height: 60px;
+  }
+
+.trampo{
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.trampo p, a{
+    font-size: 1.5rem;
+}
+
+.trampo a{
+    text-decoration: underline;
+    font-weight: bold;
+    color: black;
+}
+
+.trampo a:hover{
+    color: orangered;
+}
+
+.over {
+    width: 1347px;
+    height: auto;
+    background-color: gray;
+    overflow-y: auto;
+}
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+footer{
+    background-color: rgb(19, 18, 18);
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    color: #fff;
+    display: block;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h2{
+    font-size: 20px;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.footer-bottom{
+    background-color: black;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 10px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
