@@ -8,6 +8,8 @@
     <h2 class="mt-5" ><?=TITLE?> </h2>
     <form method="post" class="mt-5">
         
+        <h4 style="color:Red"> <?=$alerta?> </h4>
+        
         <div class="form-group">
             <label>Tipo Usuário</label>
             <div>

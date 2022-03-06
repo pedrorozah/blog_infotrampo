@@ -31,7 +31,7 @@ class Usuario{
     }
 
     public function atualizar(){
-        return (new dataBase('usuarios'))->update($this->id,[
+        return (new dataBase('tb_users'))->update($this->id,[
             'tipo_user' => $this->tipo_user,
             'nome' => $this->nome,
             'cpf' => $this->cpf,
@@ -43,20 +43,20 @@ class Usuario{
     }
 
     public function excluir(){
-        return (new dataBase('usuarios'))->delete($this->id);
+        return (new dataBase('tb_users'))->delete($this->id);
     }
 
     public static function getUsers($where = null, $order = null, $limit=null){
-        return (new dataBase('usuarios'))->select($where,$order,$limit)->fetchAll(PDO::FETCH_CLASS,self::class);
+        return (new dataBase('tb_users'))->select($where,$order,$limit)->fetchAll(PDO::FETCH_CLASS,self::class);
     }
 
     public static function getUser($id){
-        return (new dataBase('usuarios'))->selectOne('id = '.$id)
+        return (new dataBase('tb_users'))->selectOne('id = '.$id)
                                         ->fetchObject(self::class);
     }
 
-    public static function getLogin($email,$senha){
-        return (new dataBase('usuarios'))->selectLogin($email,$senha)
+    public static function getLogin($email){
+        return (new dataBase('tb_users'))->selectLogin($email)
                                         ->fetchObject(self::class);
     }
 
