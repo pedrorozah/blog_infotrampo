@@ -65,9 +65,10 @@ class dataBase{
             
         }
 
-        public function selectLogin($email,$senha){
+        public function selectLogin($email){
                     //SELECT * FROM tb_users WHERE email = "como" and senha = "consagrado"
-            $query = 'SELECT * FROM tb_users WHERE email = "'.$email.'" AND senha = "'.$senha.'"';
+            $query = 'SELECT * FROM tb_users WHERE email = "'.$email.'"';
+            //echo("seu pai");
             //print_r($query);
             return $this->execute($query);
 

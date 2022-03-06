@@ -13,12 +13,12 @@
 
         <div class="form-group">
             <label> Email: </label>
-            <input type="text" class="form-control" name='email'>
+            <input type="email" class="form-control" name='email'>
         </div>
 
         <div class="form-group">
             <label> Senha: </label>
-            <input type="text" class="form-control" name='senha'>
+            <input type="password" class="form-control" name='senha'>
         </div>
 
         <div class="form-group">
