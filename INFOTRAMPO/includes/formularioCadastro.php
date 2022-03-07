@@ -13,12 +13,12 @@
             <div>
                 <div class="form-check form-check-inline">
                     <label class="form-control">
-                        <input type="radio" name="tipoUsuario" checked value="Usuario tipo cliente"> Cliente
+                        <input type="radio" name="tipoUsuario" checked value="cliente"> Cliente
                     </label>
                 </div>
                 <div class="form-check form-check-inline">
                     <label class="form-control">
-                        <input type="radio" name="tipoUsuario" value="Usuario tipo administrador"> Administrador
+                        <input type="radio" name="tipoUsuario" value="administrador"> Administrador
                     </label>
                 </div>
             </div>
