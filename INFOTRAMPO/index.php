@@ -3,7 +3,7 @@
     use \App\Entity\Usuario;
     use \App\Sessao\LogSessao;
 
-    //LogSessao::requireLog();
+    LogSessao::requireLog();
     $users = Usuario::getUsers();
 
     include __DIR__.'/includes/header.php';
