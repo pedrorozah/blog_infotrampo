@@ -78,8 +78,7 @@ header{
 .nav-acesso a{
     padding: 10px;
     font-size: 15px;
-    /* color: black;*/
-    color: #ffffff;
+    color: #222222;
     font-weight: bold;
     border-radius: 5px;
 }
