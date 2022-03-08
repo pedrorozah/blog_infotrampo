@@ -90,6 +90,10 @@ header{
     transition: 0.5s;
 }
 
+/* Parte dos Trabalhadores a editar ainda
+
+
+
 /* TELA */
 
 .box{
@@ -175,7 +179,8 @@ button{
 }
     
 button:hover{
-    background: black;
+    /* background: black;*/
+    background: grey;
     color: white;
     transition: 0.5s;
 }
@@ -218,6 +223,8 @@ button:hover{
     background-color: gray;
     overflow-y: auto;
 }
+
+*/
 
 
 /* FOOTER */
