@@ -57,7 +57,6 @@ header{
     font-size: 2rem;
     font-weight: bold;
 }
-
 /* ACESSO */
 
 .nav-acesso{
@@ -79,153 +78,122 @@ header{
 .nav-acesso a{
     padding: 10px;
     font-size: 15px;
-    color: black;
+    color: #222222;
     font-weight: bold;
     border-radius: 5px;
 }
 
 .nav-acesso a:hover{
-    background: black;
-    color: white;
+    background: #222222;
+    color: #ffffff;
     transition: 0.5s;
 }
 
-/* Parte dos Trabalhadores a editar ainda
+/* WELCOME */
 
-
-
-/* TELA */
-
-.box{
-    margin-top: 30px;
+.welcome{
     display: flex;
-    justify-content: center;
-}
-
-.container{
-    display: flex;
-    width: 90%;
-    height: auto;
-    border-style: solid;
-    margin: 3px;
-    flex-wrap: wrap;
-}
-
-.tela{
     width: 100%;
-    height: 100px;
-    background-color: black;
-    display: flex;
-    align-items: center;
-    
-}
-
-.tela h2{
-    margin-left: 80px;
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #fff;
-}
-
-/* FILTRO */
-
-.box-filtro{
-    display: flex;
+    height: 500px;
     justify-content: center;
-    margin-top: 30px;
     align-items: center;
+    background-image: url("https://images.axios.com/WVWPMo4kVq7ZSwcIr16u8QZ8nAY=/0x280:5100x3149/1920x1080/2018/06/01/1527894970857.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
 }
 
-.filtro{
-    width: 300px;
-    height: auto;
-    border-style: solid;
-    margin: -2px;
-}
-
-
-.lista{
-    margin-top: 20px;
-    height: 700px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.lista ul p{
+.welcome h2{
+    font-size: 3.5rem;
     font-weight: bold;
-    margin-left: 10px;
-    margin: 10px;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px black;
+
 }
 
-.lista p{
+.welcome h1{
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
     text-align: center;
 }
 
-.lista label:hover{
-    font-weight: bold;
-    font-size: 15px;
-}
+/* MENU */
 
-button{
-    background-color: white;
-    margin-top: 15px;
-    width: auto;
-    height: auto;
-    padding: 10px;
-    color: black;
-    font-weight: bold;
-    border-radius: 5px;
-}
-    
-button:hover{
-    /* background: black;*/
-    background: grey;
-    color: white;
-    transition: 0.5s;
-}
-
-/* PESQUISA */
-
-#txtBusca{
-    padding-left: 5px;
-    font-style: italic;
-    font-size: 20px;
-    width: 1347px;
-    height: 60px;
-  }
-
-.trampo{
-    height: 30px;
+.menu{
+    width: 100%;
+    height: 120px;
     display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
-.trampo p, a{
-    font-size: 1.5rem;
-}
-
-.trampo a{
-    text-decoration: underline;
-    font-weight: bold;
+.menu p{
     color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
-.trampo a:hover{
-    color: orangered;
+/* CONTAINER */
+
+.box{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.over {
-    width: 1347px;
-    height: auto;
-    background-color: gray;
-    overflow-y: auto;
+.box a{
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: white;
+    margin: 30px;
 }
 
-*/
+.box a:hover{
+    transition: 0.5;
+    font-weight: bold;
+    font-size: 2rem;
+    text-shadow: 2px 2px black;
+}
 
+/* ITENS */
+ 
+.item{
+    border-radius: 2%;
+    background-color: #2e2e2e;
+    width: 400px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+.item:hover{
+    -webkit-transform: scale(1.0);
+    transform: scale(1.02);
+}
+
+.article-01{
+    background-image: url("https://images.unsplash.com/photo-1572715376701-98568319fd0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.article-02{
+    background-image: url("https://tse3.mm.bing.net/th?id=OIP.SLWRi6f4CnZ6L_QwvvTrtwHaMP&pid=Api");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.article-03{
+    background-image: url("https://miro.medium.com/max/2560/0*30KkX632J5yFTZ6D");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
 /* FOOTER */
 
@@ -235,7 +203,6 @@ footer{
     width: 100%;
     padding-top: 40px;
     color: #fff;
-    display: block;
 }
 
 .footer-content{
