@@ -78,14 +78,15 @@ header{
 .nav-acesso a{
     padding: 10px;
     font-size: 15px;
-    color: black;
+    /* color: black;*/
+    color: #ffffff;
     font-weight: bold;
     border-radius: 5px;
 }
 
 .nav-acesso a:hover{
-    background: black;
-    color: white;
+    background: #222222;
+    color: #ffffff;
     transition: 0.5s;
 }
 
