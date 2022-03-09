@@ -1,4 +1,7 @@
 <?php
+    
+    use App\Sessao\LogSessao;
+    LogSessao::requireLog();
 
     $mensagem ='';
     if (isset($_GET['status'])) {
@@ -14,23 +17,45 @@
 
     $resultado = '';
     foreach ($users as $user) {
-        $resultado .='<tr>
-            <td>'.$user->id.'</td>
-            <td>'.($user->tipo_user =='Usuario tipo cliente'?'Cliente' : 'Administrador').'</td>
-            <td>'.$user->nome.'</td>
-            <td>'.$user->cpf.'</td>
-            <td>'.$user->email.'</td>
-            <td>'.$user->descricao.'</td>
-            <td>'.date('d/m/Y',strtotime($user->data_nascimento)).'</td>
-            <td>
-                <a href="editar.php?id='.$user->id.'">
-                    <button type="button" class="btn btn-primary">Editar</button>
-                </a>
-                <a href="excluir.php?id='.$user->id.'">
-                    <button type="button" class="btn btn-danger">Excluir</button>
-                </a>
-            </td>
-        </tr>';
+        $userLog = LogSessao::getUserLog();
+
+        if ($userLog['tipo_user']=='administrador') {
+            $resultado .='<tr>
+                <td>'.$user->id.'</td>
+                <td>'.$user->tipo_user.'</td>
+                <td>'.$user->nome.'</td>
+                <td>'.$user->cpf.'</td>
+                <td>'.$user->email.'</td>
+                <td>'.date('d/m/Y',strtotime($user->data_nascimento)).'</td>
+                <td>
+                    <a href="editar.php?id='.$user->id.'">
+                        <button type="button" class="btn btn-primary">Editar</button>
+                    </a>
+                    <a href="excluir.php?id='.$user->id.'">
+                        <button type="button" class="btn btn-danger">Excluir</button>
+                    </a>
+                    <a href="perfil.php?id='.$user->id.'">
+                        <button type="button" class="btn btn-success">Acessar o Perfil</button>
+                    </a>
+                </td>
+            </tr>';
+        }else{
+            $resultado .='<tr>
+                <td>'.$user->id.'</td>
+                <td>'.$user->tipo_user.'</td>
+                <td>'.$user->nome.'</td>
+                <td>'.$user->cpf.'</td>
+                <td>'.$user->email.'</td>
+                <td>'.date('d/m/Y',strtotime($user->data_nascimento)).'</td>
+                <td>
+                    <a href="perfil.php?id='.$user->id.'">
+                        <button type="button" class="btn btn-success">Acessar o Perfil</button>
+                    </a>
+                </td>
+            </tr>';
+        }
+        
+        
     }
 ?>
 
@@ -46,9 +71,8 @@
                 <th>Nome</th>
                 <th>CPF</th>
                 <th>Email</th>
-                <th>Descrição</th>
                 <th>Data de Nascimento</th>
-                <th>Opções</th>
+                <th>    </th>
             </thead>
             <tbody>
 

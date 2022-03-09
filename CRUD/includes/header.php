@@ -1,3 +1,25 @@
+<?php 
+
+    use \App\Sessao\LogSessao;
+    $userLog = LogSessao::getUserLog();
+    //print_r($userLog);
+
+    $userL = $userLog ?
+            $userLog['nome'].
+        '<br> <br> <a href="deslogar.php" class="ml-2">
+            <button class="btn btn-danger">Sair</button>
+        </a>'
+         :
+            'Visitante
+        <a href="cadastrar.php">
+            <button class="btn btn-success">Cadastrar</button>
+        </a>
+        <a href="logar.php">
+            <button class="btn btn-primary">Login</button>
+        </a>';
+
+
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -10,17 +32,22 @@
 
     <title>CRUD</title>
   </head>
+
   <body class="text-light bg-dark">
     <div class="container bg-warning">
+        
         <div class="jumbotron">
             <h1>INFOTRANPO</h1>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <br>
+            <div class="d-flex justify-contentet-start"> 
+                <?=$userL?>                   
+                <a href="publicacoes.php" class="ml-2">
+                    <button class="btn btn-primary">Publicações</button>
+                </a>
+            </div>
+            
             <section>
-        <a href="cadastrar.php">
-            <button class="btn btn-success">Cadastrar</button>
-        </a>
-        <a href="logar.php">
-            <button class="btn btn-primary">Login</button>
-        </a>
+        
     </section>
         </div>

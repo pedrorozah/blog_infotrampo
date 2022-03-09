@@ -5,10 +5,9 @@
             <button class="btn btn-success"> Voltar </button>
         </a>
     </section>
+
     <h2 class="mt-5" ><?=TITLE?> </h2>
     <form method="post" class="mt-5">
-        
-        <h4 style="color:Red"> <?=$alerta?> </h4>
         
         <div class="form-group">
             <label>Tipo Usuário</label>
@@ -20,7 +19,7 @@
                 </div>
                 <div class="form-check form-check-inline">
                     <label class="form-control">
-                        <input type="radio" name="tipoUsuario" value="administrador"> Administrador
+                        <input type="radio" name="tipoUsuario" value="administrador"<?=$user->tipo_user =='administrador'? 'checked':''?>> Administrador
                     </label>
                 </div>
             </div>
@@ -28,32 +27,32 @@
         
         <div class="form-group">
             <label> Nome Completo: </label>
-            <input type="text" required class="form-control" name='nome' >
+            <input type="text" class="form-control" name='nome' value="<?=$user->nome?>">
         </div>
 
         <div class="form-group">
             <label> CPF: </label>
-            <input type="text" required class="form-control" name='cpf'>
+            <input type="text" class="form-control" name='cpf' value="<?=$user->cpf?>">
         </div>
 
         <div class="form-group">
             <label> Senha: </label>
-            <input type="text" required class="form-control" name='senha'>
+            <input type="text" class="form-control" name='senha' value="<?=$user->senha?>">
         </div>
     
         <div class="form-group">
             <label> Email: </label>
-            <input type="text" required class="form-control" name='email'>
+            <input type="text" class="form-control" name='email' value="<?=$user->email?>">
         </div>
 
         <div class="form-group">
             <label> Descrição: </label>
-            <textarea required class="form-control" name='descricao'></textarea>
+            <textarea class="form-control" name='descricao'><?=$user->descricao?></textarea>
         </div>
 
         <div class="form-group">
             <label> Data de Nascimento: </label>
-            <input type="date" required class="form-control" name='dataN'>
+            <input type="date" class="form-control" name='dataN' value="<?=$user->data_nascimento?>">
         </div>
 
         <div class="form-group">
