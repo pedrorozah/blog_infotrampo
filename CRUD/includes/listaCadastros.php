@@ -16,10 +16,16 @@
     }    
 
     $resultado = '';
+    $button = '';
+
+
     foreach ($users as $user) {
         $userLog = LogSessao::getUserLog();
 
         if ($userLog['tipo_user']=='administrador') {
+            $button ='<a href="registrosDenuncia.php?id='.$user->id.'">
+                        <button type="button" class="btn btn-danger">Denuncias</button>
+                     </a>';
             $resultado .='<tr>
                 <td>'.$user->id.'</td>
                 <td>'.$user->tipo_user.'</td>
@@ -60,7 +66,7 @@
 ?>
 
 <main>
-
+    <?= $button ?>
     
     <?=$mensagem?>
     <section>

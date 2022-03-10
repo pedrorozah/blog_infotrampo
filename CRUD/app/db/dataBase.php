@@ -130,4 +130,38 @@ class dataBase{
         return true;
     }
 
+// Funções PUBLICAÇÃO
+
+    public function insertDenuncia($values){
+        $fields = array_keys($values);
+        $binds = array_pad([],count($fields),'?');
+
+        $query = 'INSERT INTO '.$this->table.' ('.implode(',',$fields).' ) VALUES ('.implode(',',$binds).')';
+        $this->execute($query,array_values($values));
+        return $this->connection->lastInsertId();
+    }
+
+    public function selectDenuncias($where = null, $order = null, $limit = null, $fields = '*')
+    {
+        $where = strlen($where) ? 'WHERE' . $where : '';
+        $order = strlen($order) ? 'ORDER BY' . $order : '';
+        $limit = strlen($limit) ? 'LIMIT' . $limit : '';
+        $query = 'SELECT ' . $fields . ' FROM tb_denuncia ' . $where . ' ' . $order . ' ' . $limit;
+        return $this->execute($query);
+    }
+
+    public function selectOneDenuncia($id_denuncia)
+    {
+        $query = 'SELECT * FROM tb_denuncia WHERE ' . $id_denuncia;
+        return $this->execute($query);
+    }
+
+    public function desativar($where){
+        //UPDATE `bd_teste`.`tb_denuncia` SET `status` = 'inativo' WHERE (`id_denuncia` = '6');
+        $inativo="'inativo'";
+        $query = 'UPDATE tb_denuncia SET `status` = '.$inativo.' WHERE id_denuncia = ' . $where;
+        $this->execute($query);
+        return true;
+    }
+
     }

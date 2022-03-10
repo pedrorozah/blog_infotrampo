@@ -32,7 +32,7 @@ if (isset($_POST['excluir'])) {
 
     //Manda a excluir a Postagem e retorna o usuario para a aba publicações
     $publicacao->excluir();
-    header('location:index_publicacao.php?status=success');
+    header('location:publicacoes.php?status=success');
     exit;
 }
 

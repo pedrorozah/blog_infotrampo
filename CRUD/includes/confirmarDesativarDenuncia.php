@@ -5,18 +5,17 @@
         </a>
     </section>
 
-    <h2 class="mt-5"> Excluir publicação </h2>
     <form method="post" class="mt-5">
 
         <div class="form-group">
-            <p> Confirmar exclusão da publicação <strong><?= $publicacao->titulo ?></strong>?</p>
+            <p> Deseja marcar essa denuncia como revisada? </p>
         </div>
 
         <div class="form-group">
-            <a href="publicacoes.php">
+            <a href="registorosDenuncia.php">
                 <button type="button" class="btn btn-success mt-4">Cancelar</button>
             </a>
-            <button type="submit" name="excluir" class="btn btn-danger mt-4">Excluir</button>
+            <button type="submit" name="desativar" class="btn btn-danger mt-4">Desativar</button>
         </div>
 
     </form>
