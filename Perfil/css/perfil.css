@@ -97,15 +97,17 @@ header{
     margin-top: 30px;
     display: flex;
     justify-content: center;
+
 }
 
 .container{
     display: flex;
-    width: 90%;
+    width: 75%;
     height: auto;
     border-style: solid;
     margin: 3px;
     flex-wrap: wrap;
+    background-color: white;
 }
 
 .tela{
@@ -125,9 +127,6 @@ header{
 }
 
 
-
-
-
 /* FOOTER */
 
 footer{
@@ -137,6 +136,7 @@ footer{
     padding-top: 40px;
     color: #fff;
     display: block;
+
 }
 
 .footer-content{
@@ -163,6 +163,7 @@ footer{
     width: 100%;
     padding: 15px 0;
     text-align: center;
+
 }
 
 .footer-bottom p{
