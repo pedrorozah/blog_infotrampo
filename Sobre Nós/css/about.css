@@ -154,7 +154,7 @@ header{
     
 }
 .article-02{
-    background-image: url("../../img/Luis.jpg");
+    background-image: url("../../img/luiz.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -166,7 +166,7 @@ header{
 }
 
 .article-04{
-    background-image: url("../../img/Pedro.png");
+    background-image: url("../../img/Pedro.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -197,16 +197,37 @@ header{
 
 /* BIO */
 
-.bio{
+.bio1{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: auto;
+    height: auto;
+}
+.bio2{
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     height: auto;
 }
+.bio3{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+}
+.bio4{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    height: auto;
+}
 
 .bio p{
-    text-align: center;
+    text-align: left;
 }
 
 /* FOOTER */
