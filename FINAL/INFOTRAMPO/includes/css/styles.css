@@ -1,0 +1,589 @@
+/* DEFINIÇÕES GERAIS */
+
+body, h1, h2, h3, p, ul, li, a{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Poppins Semi Bold', sans-serif ;
+}
+
+ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: yellow;
+}
+/*Botões*/
+.btn-verde{
+    background-color: rgb(40, 167, 78);
+    border-color: #222222;
+    color: rgb(236, 233, 229);
+    font-weight: bold;
+    font-size: 14pt;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    margin-right: 5px;
+    margin-left: 5px;
+    text-align: center;
+}
+.btn-vermelho{
+    background-color: rgb(206, 20, 35);
+    border-color: #222222;
+    color: rgb(236, 233, 229);
+    font-weight: bold;
+    font-size: 14pt;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+.btn-azul{
+    background-color: rgb(18, 102, 212);
+    border-color: #222222;
+    color: rgb(236, 233, 229);
+    font-weight: bold;
+    font-size: 14pt;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.opcoes{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.info-user{
+    color: yellow;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-size: 28px;
+    position:sticky;
+    left:1000px;
+}
+
+/* LOGO */
+
+.nav-logo{
+    font-size: 2em;
+    font-weight: bold;
+    display: flex;
+    padding: 10px;
+    background-color: rgb(36, 35, 34);
+    height: 80px;
+    width: 100%;
+}
+.nav-logo i{
+    align-self: center;
+    padding-right: 10px;
+}
+.nav-logo p{
+    margin-top: 5px;
+    margin-left: 3px;
+}
+
+.nav-logo a{
+    text-decoration: none;
+    color:  white;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* CADASTRO */
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* */
+
+
+.containerP{
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-style: solid;
+    margin: 3px;
+    flex-wrap: wrap;
+    background-color: white;
+    align-items: center;
+}
+
+.telaP{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    
+}
+
+.telaP h2{
+    margin-left: 40px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.cardP{
+    background-color: #dad6d6;
+    padding: 30px;
+    border-radius: 4%;
+    box-shadow: 3px 3px 1px 0px #00000070;
+    width: 100%;
+}
+
+/* */
+
+.card{
+    background-color: #dad6d6;
+    padding: 30px;
+    border-radius: 4%;
+    box-shadow: 3px 3px 1px 0px #00000070;
+    width: 400px;
+}
+
+.cardPubli{
+    background-color:rgb(49, 48, 46);
+    padding: 30px;
+    border-radius: 5%;
+    box-shadow: 6px 0px 1px 5px #00000070;
+    width: 700px;
+    margin-bottom: 0px;
+}
+
+.infoExtra{
+    font-family: monospace;
+    font-size: 12px;
+    color: rgb(158, 157, 152);
+}
+
+.cardPost{
+    background-color:rgb(49, 48, 46);
+    padding: 30px;
+    border-radius: 5%;
+    box-shadow: 6px 0px 1px 5px #00000070;
+    width: 700px;
+    margin-bottom: 0px;
+    color:cornsilk;
+}
+.cardPost h4{
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 10px;
+    color: white;
+}
+.cardPost h3{
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.cardDenuncia{
+    background-color:rgb(49, 48, 46);
+    padding: 30px;
+    border-radius: 5%;
+    box-shadow: 6px 0px 1px 5px #00000070;
+    width: 700px;
+    margin-bottom: 0px;
+    color: cornsilk;
+}
+
+
+.cardList{
+    background-color:rgb(49, 48, 46);
+    padding: 20px;
+    border-radius: 5%;
+    box-shadow: 6px 0px 1px 5px #00000070;
+    width: 900px;
+    text-align: center;
+    color:cornsilk;
+}
+
+.titulo{
+    font-weight: bold;
+    color: yellow;
+    text-align:left;
+}
+
+.tituloPost{
+    margin-top: 10px;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: cornsilk;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #222222;
+}
+
+.label-float input{
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid #222222;
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3 ease-out;
+    border-radius: 0;
+}
+
+.label-float{
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.label-float input:focus{
+    border-bottom: 2px solid #2e2e2e;
+}
+
+.label-float label{
+    /* / */
+    pointer-events: none;
+    color: #222222;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+}
+
+.label-float textarea{
+    width: 100%;
+    margin-top: 15px;
+    height: 100px;
+    font-family: 'Poppins Semi Bold', sans-serif ;
+    font-size: 18px;
+}
+
+.data_nascimento{
+    
+    transition: all 2.3s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label{
+    font-size: 13px;
+    margin-top: 0;
+    color: #2e2e2e;
+}
+
+button{
+    background-color: transparent;
+    border-color: #222222;
+    color: black;
+    padding: 7px;
+    font-weight: bold;
+    font-size: 12pt;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover{
+    background-color: rgb(184, 178, 178);
+    color: #1f1d1d;
+}
+
+.justify-center{
+    display: flex;
+    justify-content: center;
+}
+
+.justify-center hr{
+    border-color: #222222;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 60%;
+}
+
+.login-paragrafo p{
+    color: #222222;
+    font-size: 14pt;
+    text-align: center;
+}
+
+.login-paragrafo a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .3 ease-out;
+}
+
+.login-paragrafo a:hover{
+    color: orangered;
+}
+
+.fa-eye{
+    position: absolute;
+    top: 17px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/*Pagina Index*/
+
+/* WELCOME */
+
+.welcome{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://images.axios.com/WVWPMo4kVq7ZSwcIr16u8QZ8nAY=/0x280:5100x3149/1920x1080/2018/06/01/1527894970857.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+
+.welcome h2{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px black;
+
+}
+
+.welcome h1{
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+/* MENU */
+
+.menu{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu p{
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* CONTAINER */
+
+.box{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.box a{
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: white;
+    margin: 30px;
+}
+
+.box a:hover{
+    transition: 0.5;
+    font-weight: bold;
+    font-size: 2rem;
+    text-shadow: 2px 2px black;
+}
+
+
+.bio-space{
+    column-count: 4;
+    column-gap: 40px; 
+    text-align: center; 
+}
+
+.bio p{
+    text-align: center;
+    
+}
+
+
+.name{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.name {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: black;
+}
+
+.about{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.about h2{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.us h1{
+    margin-bottom: 20px;
+}
+
+.us{
+    flex: 3;
+}
+
+.us p{
+    font-family: 'Tajawal', sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+/* ITENS */
+ 
+
+.itens{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.item{
+    border-radius: 2%;
+    background-color: #2e2e2e;
+    width: 400px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+.item:hover{
+    -webkit-transform: scale(1.0);
+    transform: scale(1.02);
+}
+
+.article-01{
+    background-image: url("https://images.unsplash.com/photo-1572715376701-98568319fd0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.article-02{
+    background-image: url("https://tse3.mm.bing.net/th?id=OIP.SLWRi6f4CnZ6L_QwvvTrtwHaMP&pid=Api");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.article-03{
+    background-image: url("https://miro.medium.com/max/2560/0*30KkX632J5yFTZ6D");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.article-01a{
+    background-image: url("../../img/estevao.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.article-02a{
+    background-image: url("../../img/luiz.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.article-03a{
+    background-image: url("../../img/maria.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.article-04a{
+    background-image: url("../../img/pedro.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* FOOTER */
+
+footer{
+    background-color: rgb(19, 18, 18);
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h2{
+    font-size: 20px;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.footer-bottom{
+    background-color: black;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 10px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}

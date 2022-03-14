@@ -15,7 +15,7 @@
 
     <section class="box">
             <article class="item article-01"><a href="publicacoes.php"> Trabalhadores </a></article>
-            <article class="item article-02"><a href="publicacoes.php"> Serviços e Trabalhos </a></article>
+            <article class="item article-02"><a href="sobreNos.php"> Sobre Nós</a></article>
             <article class="item article-03"><a href="Cadastrar.php">Cadastre-se </a></article>  
     </section>
 

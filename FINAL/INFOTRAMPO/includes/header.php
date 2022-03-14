@@ -3,9 +3,9 @@
     use \App\Sessao\LogSessao;
     $userLog = LogSessao::getUserLog();
         
-    $userL = $userLog ?
+    $userL = $userLog ?'<a href="perfil.php">'.
             $userLog['nome'].
-        '<a href="deslogar.php" class="ml-2">
+        '</a> <a href="deslogar.php" class="ml-2">
             <button class="btn-vermelho">Sair</button>
         </a>
         <a href="publicacoes.php" style="margin-left: 10px;">
@@ -30,7 +30,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
-    <link rel="stylesheet" href="includes/css/style.css">
+    <link rel="stylesheet" href="includes/css/styles.css">
     <!-- JavaScript -->
     <script src="includes/js/cadastro.js"></script>
     <!-- Icon -->

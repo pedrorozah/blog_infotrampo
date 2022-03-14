@@ -5,10 +5,10 @@ use PDOException;
 
 class dataBase{
         //Informações para conectar no banco de dados 
-        const HOST ='localhost:3306';
+        const HOST ='localhost';
         const NAME ='bd_teste';
         const USER ='root';
-        const PASS ='password';
+        const PASS ='bancodedados';
 
         private $table;
         private $connection;
