@@ -1,4 +1,4 @@
-<body class="bg-warning">
+<body background="img/4.png">
     <main>
 
         <div class="tituloPost">

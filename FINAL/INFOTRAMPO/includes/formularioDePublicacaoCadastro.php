@@ -1,5 +1,5 @@
-<body class="text-light bg-warning">
-    <main>
+<body background="img/cadastro.png">
+    <main class="text-light">
         <div class="container">
 
             <div class="cardPubli">

@@ -1,4 +1,4 @@
-<body class="bg-warning">
+<body background="img/1.png">
     <main>
         <div class="container">
             <div class="opcoes">

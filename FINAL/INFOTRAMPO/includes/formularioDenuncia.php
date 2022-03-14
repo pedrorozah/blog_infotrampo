@@ -1,4 +1,4 @@
-<body class="bg-warning">
+<body background="img/cadastro.png">
     <main>
         <div class="container">
             <div class="opcoes">

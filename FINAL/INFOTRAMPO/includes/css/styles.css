@@ -65,6 +65,7 @@ body{
     margin-left: 5px;
 }
 
+
 .opcoes{
     margin-top: 10px;
     text-align: center;
@@ -116,8 +117,6 @@ body{
     margin-bottom: 50px;
 }
 
-/* */
-
 
 .containerP{
     display: flex;
@@ -154,7 +153,6 @@ body{
     width: 100%;
 }
 
-/* */
 
 .card{
     background-color: #dad6d6;
@@ -422,12 +420,8 @@ button:hover{
     text-shadow: 2px 2px black;
 }
 
-
-.bio-space{
-    column-count: 4;
-    column-gap: 40px; 
-    text-align: center; 
-}
+/* ITENS */
+ 
 
 .bio p{
     text-align: center;
@@ -485,7 +479,6 @@ button:hover{
     align-items: flex-start;
 }
 
-
 .item{
     border-radius: 2%;
     background-color: #2e2e2e;
@@ -524,7 +517,6 @@ button:hover{
     background-image: url("../../img/estevao.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    
 }
 .article-02a{
     background-image: url("../../img/luiz.jpg");
@@ -544,7 +536,6 @@ button:hover{
     background-size: cover;
     background-position: center;
 }
-
 
 /* FOOTER */
 

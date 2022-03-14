@@ -1,7 +1,3 @@
-<body class="text-light bg-dark">
-    <div>
-        <div class="jumbotron">
-        </div>
 <body background="img/cadastro.png">
     <header>
         

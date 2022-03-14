@@ -1,0 +1,10 @@
+Ao se cadastrar voce sera automaticamente um "Cliente"
+Pra acessar o site como um administrador e ver as partes do site exclusiva do administrador, utilize uma das seguintes contar ao logar
+
+email: xiao@xiao
+senha: 123456
+-
+email: luan@luan
+senha: 123456
+
+ps: Um administrador consegue transformar outro usuario em administrador ao editar seu perfil.

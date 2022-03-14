@@ -27,10 +27,11 @@ if (!$publicacao instanceof Publicacao) {
     exit;
 }
 
-//Confere se quem está tentando editar a postagem é o autor da postagem ou um administador
-//LogSessao:: requireValidation($publicacao->id_autor);
+//Pega as informações do Usuario Logado
 $userLog = LogSessao::getUserLog();
 $userP=$userLog;
+
+//Preenche informações diferentes a serem mostradas caso o usuario seja ou não um Administrador ou o Autor da postagem
 $result='';
 if ($userP['tipo_user']=='administrador'||$userP['id']==$publicacao->id_autor) {
     $result .=
@@ -43,13 +44,14 @@ if ($userP['tipo_user']=='administrador'||$userP['id']==$publicacao->id_autor) {
 ;
 }
 
-//Confere se os dados a serem editados estão preenchidos antes de atualizalos
+//Verifica se quem esta vendo a postagem Clicou para denuncia-la e se sim o redireciona para a aba de denuncia
 if(isset($_POST['denunciar'])){
     $redirect='location:cadastrarDenunciar.php?id='.($publicacao->id_publicacao);
     header($redirect);
     exit;
 };    
 
+//Chama as páginas que fazem parte da Aba Publicação
 include __DIR__ . '/includes/header.php';
 include __DIR__ . '/includes/postPublicacao.php';
 include __DIR__ . '/includes/footer.php';

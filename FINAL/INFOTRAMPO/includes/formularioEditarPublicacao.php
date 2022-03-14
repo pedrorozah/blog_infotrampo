@@ -1,5 +1,5 @@
-<body class="text-light bg-warning">
-    <main>
+<body background="img/1.png">
+    <main class="text-light">
         <div class="container">
             <div class="cardPubli">
                 <h2 class="mt-5"><?= TITLE ?> </h2>

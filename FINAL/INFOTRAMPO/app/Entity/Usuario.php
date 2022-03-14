@@ -2,6 +2,8 @@
 
 namespace app\Entity;
 
+/* Dependências */
+
 use App\db\dataBase;
 use \PDOException;
 use \PDO;

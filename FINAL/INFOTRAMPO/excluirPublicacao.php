@@ -1,7 +1,7 @@
 <?php
-
-// TEM QUE FAZER EXCLUIR
 require __DIR__ . '/vendor/autoload.php';
+
+/* Dependências */
 
 use \App\Entity\Publicacao;
 use App\Sessao\LogSessao;

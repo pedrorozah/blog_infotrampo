@@ -1,5 +1,7 @@
 <?php
     $mensagem = '';
+    
+    //Verifica se o usuario digitou as Credenciais e informa que houve um erro caso esteja incorreto 
     if (isset($_GET['status'])) {
         switch ($_GET['status']) {
             case 'error4':

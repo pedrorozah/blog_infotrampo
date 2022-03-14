@@ -72,4 +72,13 @@ class Publicacao
         return (new dataBase('tb_publicacao'))->selectOnePublicacao('id_publicacao = ' . $id_publicacao)
             ->fetchObject(self::class);
     }
+
+    //Função que chama todas as publicações feitas por um determinado usuario
+    public static function getPublicacaoUser($id_user)
+    {
+        return (new dataBase('tb_publicacao'))->selectPublicacaoUser('id_autor = ' . $id_user)
+        ->fetchAll(PDO::FETCH_CLASS, self::class);
+    
+    }
+
 }

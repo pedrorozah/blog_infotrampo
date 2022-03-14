@@ -1,10 +1,15 @@
 <?php
 
+/* Dependências */
+
 use app\Entity\Denuncia;
 use App\Entity\Usuario;
 use App\Sessao\LogSessao;
 
+//Exige que o usuario esteja logado
 LogSessao::requireLog();
+
+//Recebe se ocorreu algum erro e exibe uma mensagem de acordo com isso
 $mensagem = '';
 if (isset($_GET['status'])) {
     switch ($_GET['status']) {
@@ -17,6 +22,7 @@ if (isset($_GET['status'])) {
     }
 }
 
+//Preenche a tabela com as Denuncias recebidas do banco de dados, e de acordo se a denuncia esta Ativa ou Inativa mostra de maneira diferente
 $resultado = '';
 foreach ($denuncias as $denuncia) {
     $userA   = Usuario::getUser($denuncia->id_autorDenuncia);
@@ -62,8 +68,7 @@ foreach ($denuncias as $denuncia) {
     }
 }
 ?>
-
-<body class="bg-warning">
+<body background="img/cadastro.png">
     <main>
         <div class="container">
             <div class="cardList">

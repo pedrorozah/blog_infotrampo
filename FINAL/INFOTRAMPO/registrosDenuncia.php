@@ -11,9 +11,10 @@
     //Exige que o usuario seja administrador para acessar esta página
     LogSessao::requirePermision();
 
-    //Chama todas a publicações cadastradas 
+    //Chama todas as denuncias cadastradas 
     $denuncias = Denuncia::getDenuncias();
-    //print_r($denuncias);
+
+    //Chama as páginas que fazem parte da Aba Registro de Denuncias
     include __DIR__ . '/includes/header.php';
     include __DIR__ . '/includes/listaDenuncias.php';
     include __DIR__ . '/includes/footer.php';

@@ -5,10 +5,10 @@ use PDOException;
 
 class dataBase{
         //Informações para conectar no banco de dados 
-        const HOST ='localhost';
-        const NAME ='bd_teste';
+        const HOST ='localhost:3306';
+        const NAME ='bd_infotrampo';
         const USER ='root';
-        const PASS ='bancodedados';
+        const PASS ='password';
 
         private $table;
         private $connection;
@@ -113,6 +113,12 @@ class dataBase{
         return $this->execute($query);
     }
 
+    //Seleciona todas as publicações feitas por um determinado usuario
+    public function selectPublicacaoUser($id_autor){
+        $query = 'SELECT * FROM tb_publicacao WHERE ' . $id_autor;
+        return $this->execute($query);
+    }
+
     //Atualiza as informações no banco da publicação pelas novas informaçoes passadas
     public function updatePublicacao($where, $values)
     {
@@ -130,8 +136,10 @@ class dataBase{
         return true;
     }
 
-// Funções PUBLICAÇÃO
+// Funções Denuncia
 
+
+    //Insere uma denuncia cadastrada dentro do banco de dados
     public function insertDenuncia($values){
         $fields = array_keys($values);
         $binds = array_pad([],count($fields),'?');
@@ -141,6 +149,7 @@ class dataBase{
         return $this->connection->lastInsertId();
     }
 
+    //Traz o registro de todas as denuncias armazenadas no banco de dados
     public function selectDenuncias($where = null, $order = null, $limit = null, $fields = '*')
     {
         $where = strlen($where) ? 'WHERE' . $where : '';
@@ -150,14 +159,15 @@ class dataBase{
         return $this->execute($query);
     }
 
+    //Seleciona UMA unica denuncia do banco de dados de acordo com o ID passado na hora de chamar a denuncia
     public function selectOneDenuncia($id_denuncia)
     {
         $query = 'SELECT * FROM tb_denuncia WHERE ' . $id_denuncia;
         return $this->execute($query);
     }
 
+    //"Desativa" uma denuncia alterando a no banco de dados
     public function desativar($where){
-        //UPDATE `bd_teste`.`tb_denuncia` SET `status` = 'inativo' WHERE (`id_denuncia` = '6');
         $inativo="'inativo'";
         $query = 'UPDATE tb_denuncia SET `status` = '.$inativo.' WHERE id_denuncia = ' . $where;
         $this->execute($query);

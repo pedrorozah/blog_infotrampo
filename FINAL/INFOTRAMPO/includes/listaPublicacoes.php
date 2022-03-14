@@ -1,10 +1,15 @@
 <?php
 
+/* Dependências */
+
 use app\Entity\Publicacao;
 use App\Entity\Usuario;
 use App\Sessao\LogSessao;
 
+//Exige que o usuario esteja logado para acessar essa página
 LogSessao::requireLog();
+
+//Recebe se houve algum erro e preenche uma mensagem de acordo com isso
 $mensagem = '';
 if (isset($_GET['status'])) {
     switch ($_GET['status']) {
@@ -16,6 +21,8 @@ if (isset($_GET['status'])) {
             break;
     }
 }
+
+//Preenche as informações das publicações em uma tabela, e mostra informações diferentes de acordo com se o usuario é um Cliente ou um Administrador
 $button = '';
 $resultado = '';
 foreach ($publicacoes as $publicacao) {
@@ -65,8 +72,7 @@ foreach ($publicacoes as $publicacao) {
     };
 }
 ?>
-
-<body class="bg-warning">
+<body background="img/infotrampo.png">
     <main>
         <?= $mensagem ?>
         <div class="container">

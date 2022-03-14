@@ -18,18 +18,19 @@
     //Preenche a variavel de Denuncia com os dados do usuario correpondente ao ID passado
     $denuncia = new Denuncia;
     $denuncia = Denuncia::getDenuncia($_GET['id']);
-    //Confere se a pessoa que está tentando excluir é a Dona do Perfil ou Administador
+
+    //Confere se a pessoa que está tentando desativar a Denuncia é um Administador
     LogSessao:: requireValidation($_GET['id']);
 
-    //Confere se a registro desse usuario no banco de dados, caso não haja retorna o usuario e informa que houve um erro
+    //Confere se a registro dessa denuncia no banco de dados, caso não haja retorna o usuario e informa que houve um erro
     if (!$denuncia instanceof Denuncia) {
       header('location: index.php?status=error');
       exit;
     }
 
-    //Confere se a pessoa Confirmou que deseja excluir a conta
+    //Confere se a pessoa Confirmou que deseja desativar a denuncia
     if(isset($_POST['desativar'])){
-        //Chama a função que exclui o usuario e o redireciona para a pagina inicial
+        //Chama a função que desativa a denuncia e o redireciona de volta para a aba denuncias
         $denuncia->desativar();
         header('location:registrosDenuncia.php?status=success');
         exit;

@@ -1,4 +1,4 @@
-<body background="img/About.png">
+<body background="img/SobreNos.png">
 <section>
         <div class="container">
             <div class="about">
@@ -21,12 +21,5 @@
         <article class="itens article-06"><h3>Luiz Felipe</h3></article>
         <article class="itens article-07"><h3>Maria Teresa</h3></article>
         <article class="itens article-08"><h3>Pedro Henrique</h3></article>
-    </section>
-    
-    <section class="bio-space">
-        <article><p>​Desenvolvedor</p></article>
-        <article><p>​Desenvolvedor</p></article>
-        <article><p>​Desenvolvedora</p></article>
-        <article><p>​Desenvolvedor</p></article>
     </section>
 </body>

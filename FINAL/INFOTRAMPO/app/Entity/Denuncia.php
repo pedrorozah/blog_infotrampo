@@ -2,6 +2,8 @@
 
 namespace app\Entity;
 
+/* Dependências */
+
 use App\db\dataBase;
 use \PDOException;
 use \PDO;
@@ -31,18 +33,19 @@ class Denuncia{
         return true;
     }
 
+    //Chama a função do banco de dados que desativa a Denuncia passando o ID de qual denuncia deve ser desativada
     public function desativar()
     {
-        return (new dataBase('tb_pdenuncia'))->desativar($this->id_denuncia);
+        return (new dataBase('tb_denuncia'))->desativar($this->id_denuncia);
     }
 
-    //Função chama todas a publicações 
+    //Função que chama todas as denuncias
     public static function getDenuncias($where = null, $order = null, $limit = null)
     {
         return (new dataBase('tb_denuncia'))->selectDenuncias($where, $order, $limit)->fetchAll(PDO::FETCH_CLASS, self::class);
     }
 
-    //Função chama uma unica publicação com base no Id passado
+    //Função chama uma unica denuncia com base no Id passado
     public static function getDenuncia($id_denuncia)
     {
         return (new dataBase('tb_denuncia'))->selectOneDenuncia('id_denuncia = ' . $id_denuncia)
